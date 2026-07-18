@@ -1,8 +1,8 @@
 <h1>Free Reliable Appliance Pickup</h1>
 <h2>Request Your Free Pickup</h2>
 
-<form action="https://formspree.io/f/mvzeapzd" method="POST">
-  <!-- Contact Details -->
+<form action="PASTE_YOUR_COPIED_FORM_ENDPOINT_HERE" method="POST">
+  <!-- Contact Info -->
   <label>Full Name:<br>
     <input type="text" name="full_name" required size="45">
   </label><br><br>
@@ -15,11 +15,11 @@
     <input type="email" name="email" required size="45">
   </label><br><br>
 
-  <label>Full Pickup Address (Portland OR & surrounding areas):<br>
+  <label>Full Pickup Address (Portland OR & Surrounding Areas):<br>
     <textarea name="pickup_address" rows="3" cols="45" required></textarea>
   </label><br><br>
 
-  <!-- Appliance Selection (your full list) -->
+  <!-- Appliance List -->
   <h3>Appliance(s) for Pickup</h3>
   <label><input type="checkbox" name="appliance" value="Refrigerator"> Refrigerator</label><br>
   <label><input type="checkbox" name="appliance" value="Freezer"> Freezer</label><br>
@@ -30,26 +30,21 @@
   <label><input type="checkbox" name="appliance" value="Electric Stove/Range"> Stove/Range (Electric)</label><br>
   <label><input type="checkbox" name="appliance" value="Dishwasher"> Dishwasher</label><br><br>
 
-  <!-- Appliance Condition -->
+  <!-- Condition -->
   <h3>Appliance Condition</h3>
   <label><input type="radio" name="condition" value="All appliances work" required> All appliances work</label><br>
   <label><input type="radio" name="condition" value="Most appliances work"> Most appliances work</label><br>
   <label><input type="radio" name="condition" value="Some need repair"> Some need repair</label><br><br>
 
-  <!-- Requirement Confirmation -->
+  <!-- Confirmation -->
   <label>
-    <input type="checkbox" name="cleanliness_confirm" required>
-    I confirm all appliances are clean, empty, free of mold, rotten food, chemicals, and hazardous materials
+    <input type="checkbox" name="clean_confirm" required>
+    I confirm all appliances are clean, free of mold, rotten food, chemicals, and hazardous materials
   </label><br><br>
 
   <!-- Spam Protection -->
   <input type="text" name="_gotcha" style="display:none;">
 
-  <!-- Success Redirect (optional: send users to a thank-you page) -->
-  <!-- <input type="hidden" name="_next" value="PASTE_YOUR_THANK_YOU_PAGE_URL_HERE"> -->
-
-  <button type="submit" style="padding:10px 20px; font-size:16px;">Submit Pickup Request</button>
+  <!-- Submit -->
+  <button type="submit">Submit Pickup Request</button>
 </form>
-
-<h3>Photos</h3>
-<p>You may add photo upload fields here later if needed.</p>
