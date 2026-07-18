@@ -1,57 +1,25 @@
-<h1>Free Reliable Appliance Pickup</h1>
 <h2>Request Your Free Pickup</h2>
 
-<!-- ONLY ONE FORM TAG HERE -->
-<form action="PASTE_THE_URL_YOU_COPIED_FROM_FORMSPREE_HERE" method="POST">
+<form action="https://formspree.io/f/mvzeapzd" method="POST">
 
-  <!-- Contact Info -->
-  <label>Full Name:<br>
-    <input type="text" name="full_name" required size="45">
-  </label><br><br>
+<label>Full Name</label><br>
+<input type="text" name="full_name" required><br><br>
 
-  <label>Phone Number:<br>
-    <input type="tel" name="phone" required size="45">
-  </label><br><br>
+<label>Phone Number</label><br>
+<input type="tel" name="phone" required><br><br>
 
-  <label>Email Address:<br>
-    <input type="email" name="email" required size="45">
-  </label><br><br>
+<label>Email</label><br>
+<input type="email" name="email" required><br><br>
 
-  <label>Full Pickup Address (Portland OR & Surrounding Areas):<br>
-    <textarea name="pickup_address" rows="3" cols="45" required></textarea>
-  </label><br><br>
+<label>Appliance Type</label><br>
+<input type="text" name="appliance" placeholder="Washer, Dryer, Refrigerator, Stove" required><br><br>
 
-  <!-- Appliance Selection -->
-  <h3>Appliance(s) for Pickup</h3>
-  <label><input type="checkbox" name="appliance" value="Refrigerator"> Refrigerator</label><br>
-  <label><input type="checkbox" name="appliance" value="Freezer"> Freezer</label><br>
-  <label><input type="checkbox" name="appliance" value="Washer"> Washer</label><br>
-  <label><input type="checkbox" name="appliance" value="Gas Dryer"> Dryer (Gas)</label><br>
-  <label><input type="checkbox" name="appliance" value="Electric Dryer"> Dryer (Electric)</label><br>
-  <label><input type="checkbox" name="appliance" value="Gas Stove/Range"> Stove/Range (Gas)</label><br>
-  <label><input type="checkbox" name="appliance" value="Electric Stove/Range"> Stove/Range (Electric)</label><br>
-  <label><input type="checkbox" name="appliance" value="Dishwasher"> Dishwasher</label><br><br>
+<label>Pickup Address</label><br>
+<input type="text" name="address" required><br><br>
 
-  <!-- Appliance Condition -->
-  <h3>Appliance Condition</h3>
-  <label><input type="radio" name="condition" value="All appliances work" required> All appliances work</label><br>
-  <label><input type="radio" name="condition" value="Most appliances work"> Most appliances work</label><br>
-  <label><input type="radio" name="condition" value="Some need repair"> Some need repair</label><br><br>
+<label>Message</label><br>
+<textarea name="message" placeholder="Tell us about the appliance"></textarea><br><br>
 
-  <!-- Requirement Confirmation -->
-  <label>
-    <input type="checkbox" name="cleanliness_confirm" required>
-    I confirm all appliances are clean, empty, free of mold, rotten food, chemicals, and hazardous materials
-  </label><br><br>
+<button type="submit">Request Free Pickup</button>
 
-  <!-- Spam Protection -->
-  <input type="text" name="_gotcha" style="display:none;">
-
-  <!-- Submit Button -->
-  <button type="submit">Submit Pickup Request</button>
-
-<!-- ONLY ONE CLOSING FORM TAG HERE -->
 </form>
-
-<h3>Photos</h3>
-<p>You may add photo upload fields here later if needed.</p>
