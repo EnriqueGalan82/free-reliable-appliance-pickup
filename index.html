@@ -1,53 +1,55 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-<title>Free Reliable Appliance Pickup</title>
-</head>
-
-<body>
 
 <h1>Free Reliable Appliance Pickup</h1>
-
-<p>Serving Portland, Oregon and surrounding areas</p>
-
 <h2>Request Pickup</h2>
 
-<form action= https://formspree.io/f/mvzeapzd   >
+<form action="https://formspree.io/f/myzeapzd" method="POST">
+  <!-- Contact Information -->
+  <label>Name:<br>
+    <input type="text" name="full_name" required size="40">
+  </label><br><br>
 
-Name:<br>
-<input type="text"><br><br>
+  <label>Phone Number:<br>
+    <input type="tel" name="phone" required size="40">
+  </label><br><br>
 
-Phone:<br>
-<input type="tel"><br><br>
+  <label>Email Address:<br>
+    <input type="email" name="email" required size="40">
+  </label><br><br>
 
-Address:<br>
-<input type="text"><br><br>
+  <label>Full Pickup Address:<br>
+    <textarea name="address" rows="3" cols="40" required></textarea>
+  </label><br><br>
 
-<h3>Select Appliance</h3>
+  <!-- Appliance Selection -->
+  <p>Select Appliance(s) for Pickup:</p>
+  <label><input type="checkbox" name="appliance" value="Refrigerator"> Refrigerator</label><br>
+  <label><input type="checkbox" name="appliance" value="Freezer"> Freezer</label><br>
+  <label><input type="checkbox" name="appliance" value="Washer"> Washer</label><br>
+  <label><input type="checkbox" name="appliance" value="Gas Dryer"> Dryer (Gas)</label><br>
+  <label><input type="checkbox" name="appliance" value="Electric Dryer"> Dryer (Electric)</label><br>
+  <label><input type="checkbox" name="appliance" value="Gas Stove"> Stove/Range (Gas)</label><br>
+  <label><input type="checkbox" name="appliance" value="Electric Stove"> Stove/Range (Electric)</label><br>
+  <label><input type="checkbox" name="appliance" value="Dishwasher"> Dishwasher</label><br><br>
 
-<input type="checkbox"> Refrigerator<br>
-<input type="checkbox"> Freezer<br>
-<input type="checkbox"> Washer<br>
-<input type="checkbox"> Dryer<br>
-<input type="checkbox"> Stove/Range<br>
-<input type="checkbox"> Dishwasher<br><br>
+  <!-- Appliance Condition -->
+  <p>Appliance Condition:</p>
+  <label><input type="radio" name="condition" value="All appliances work" required> All appliances work</label><br>
+  <label><input type="radio" name="condition" value="Most appliances work"> Most appliances work</label><br>
+  <label><input type="radio" name="condition" value="Some need repair"> Some need repair</label><br><br>
 
-<h3>Condition</h3>
+  <!-- Requirement Confirmation -->
+  <label>
+    <input type="checkbox" name="clean_confirmation" required>
+    I confirm appliances are clean, free of mold, rotten food, chemicals, and hazardous materials
+  </label><br><br>
 
-<input type="radio" name="condition"> All appliances work<br>
-<input type="radio" name="condition"> Most appliances work<br>
-<input type="radio" name="condition"> Some need repair<br><br>
+  <!-- Spam Protection -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Submit Button -->
+  <button type="submit">Submit Pickup Request</button>
+</form>
 
 <h3>Photos</h3>
 
-<input type="file" multiple><br><br>
-
-<input type="checkbox">
-I confirm appliances are clean and free of mold, rotten food, chemicals, and hazardous materials.<br><br>
-
-<button type="submit">Submit Pickup Request</button>
-
-
-</body>
-</html>
