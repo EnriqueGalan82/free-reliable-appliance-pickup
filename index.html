@@ -1,37 +1,33 @@
-
-<h2>Request Your Free Pickup</h2>
+<h2>Request Your Free Appliance Pickup</h2>
 
 <form action="https://formspree.io/f/mvzeapzd" method="POST">
 
-<label>Full Name</label><br>
-<input type="text" name="full_name" required><br><br>
+  <label>Full Name:</label><br>
+  <input type="text" name="name" required><br><br>
 
-<label>Phone Number</label><br>
-<input type="tel" name="phone" required><br><br>
+  <label>Phone Number:</label><br>
+  <input type="tel" name="phone" required><br><br>
 
-<label>Email (optional)</label><br>
-<input type="email" name="email"><br><br>
+  <label>Email Address (optional):</label><br>
+  <input type="email" name="email"><br><br>
 
-<label>What appliance do you have?</label><br>
-<input type="text" name="appliance" placeholder="Washer, Dryer, Refrigerator, Stove..." required><br><br>
+  <label>Appliance Type:</label><br>
+  <input type="text" name="appliance" placeholder="Washer, Dryer, Refrigerator, Stove, Freezer..." required><br><br>
 
-<label>What is the condition of the appliance?</label><br>
+  <label>Appliance Condition:</label><br>
 
-<input type="radio" id="working" name="condition" value="Fully working" required>
-<label for="working">1 - Fully working</label><br>
+  <input type="radio" name="condition" value="Fully functioning" required>
+  <label>Fully functioning</label><br>
 
-<input type="radio" id="repair" name="condition" value="Needs some repair">
-<label for="repair">2 - Needs some repair</label><br>
+  <input type="radio" name="condition" value="Needs some repair">
+  <label>Needs some repair</label><br>
 
-<input type="radio" id="scrap" name="condition" value="Junk or scrap">
-<label for="scrap">3 - Junk or scrap</label><br><br>
+  <input type="radio" name="condition" value="Junk or scrap">
+  <label>Junk or scrap</label><br><br>
 
-<label>Pickup Address</label><br>
-<input type="text" name="address" required><br><br>
+  <label>Message:</label><br>
+  <textarea name="message" rows="5" placeholder="Please tell us more about the appliance and pickup location" required></textarea><br><br>
 
-<label>Additional Details</label><br>
-<textarea name="message" placeholder="Tell us more about the appliance"></textarea><br><br>
-
-<button type="submit">Request Free Pickup</button>
+  <button type="submit">Request Free Pickup</button>
 
 </form>
