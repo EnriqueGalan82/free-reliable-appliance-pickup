@@ -1,27 +1,26 @@
-
 <h1>Free Reliable Appliance Pickup</h1>
-<h2>Request Pickup</h2>
+<h2>Request Your Free Pickup</h2>
 
-<form action="https://formspree.io/f/myzeapzd" method="POST">
-  <!-- Contact Information -->
+<form action="https://formspree.io/f/mvzeapzd" method="POST">
+  <!-- Contact Details -->
   <label>Full Name:<br>
-    <input type="text" name="full_name" required size="40">
+    <input type="text" name="full_name" required size="45">
   </label><br><br>
 
   <label>Phone Number:<br>
-    <input type="tel" name="phone" required size="40">
+    <input type="tel" name="phone" required size="45">
   </label><br><br>
 
   <label>Email Address:<br>
-    <input type="email" name="email" required size="40">
+    <input type="email" name="email" required size="45">
   </label><br><br>
 
-  <label>Full Pickup Address:<br>
-    <textarea name="address" rows="3" cols="40" required></textarea>
+  <label>Full Pickup Address (Portland OR & surrounding areas):<br>
+    <textarea name="pickup_address" rows="3" cols="45" required></textarea>
   </label><br><br>
 
-  <!-- Your Appliance List -->
-  <p>Select Appliance(s) for Pickup:</p>
+  <!-- Appliance Selection (your full list) -->
+  <h3>Appliance(s) for Pickup</h3>
   <label><input type="checkbox" name="appliance" value="Refrigerator"> Refrigerator</label><br>
   <label><input type="checkbox" name="appliance" value="Freezer"> Freezer</label><br>
   <label><input type="checkbox" name="appliance" value="Washer"> Washer</label><br>
@@ -31,23 +30,26 @@
   <label><input type="checkbox" name="appliance" value="Electric Stove/Range"> Stove/Range (Electric)</label><br>
   <label><input type="checkbox" name="appliance" value="Dishwasher"> Dishwasher</label><br><br>
 
-  <!-- Condition Options -->
-  <p>Appliance Condition:</p>
+  <!-- Appliance Condition -->
+  <h3>Appliance Condition</h3>
   <label><input type="radio" name="condition" value="All appliances work" required> All appliances work</label><br>
   <label><input type="radio" name="condition" value="Most appliances work"> Most appliances work</label><br>
   <label><input type="radio" name="condition" value="Some need repair"> Some need repair</label><br><br>
 
-  <!-- Cleanliness Confirmation -->
+  <!-- Requirement Confirmation -->
   <label>
-    <input type="checkbox" name="clean_confirmation" required>
-    I confirm appliances are clean, free of mold, rotten food, chemicals, and hazardous materials
+    <input type="checkbox" name="cleanliness_confirm" required>
+    I confirm all appliances are clean, empty, free of mold, rotten food, chemicals, and hazardous materials
   </label><br><br>
 
   <!-- Spam Protection -->
-  <input type="text" name="_gotcha" style="display:none">
+  <input type="text" name="_gotcha" style="display:none;">
 
-  <!-- Submit Button -->
-  <button type="submit">Submit Pickup Request</button>
+  <!-- Success Redirect (optional: send users to a thank-you page) -->
+  <!-- <input type="hidden" name="_next" value="PASTE_YOUR_THANK_YOU_PAGE_URL_HERE"> -->
+
+  <button type="submit" style="padding:10px 20px; font-size:16px;">Submit Pickup Request</button>
 </form>
 
 <h3>Photos</h3>
+<p>You may add photo upload fields here later if needed.</p>
