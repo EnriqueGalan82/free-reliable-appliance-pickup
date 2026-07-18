@@ -1,6 +1,9 @@
 
+<h1>Free Reliable Appliance Pickup</h1>
+<h2>Request Pickup</h2>
+
 <form action="https://formspree.io/f/myzeapzd" method="POST">
-  <!-- Contact Info -->
+  <!-- Contact Information -->
   <label>Full Name:<br>
     <input type="text" name="full_name" required size="40">
   </label><br><br>
@@ -17,7 +20,7 @@
     <textarea name="address" rows="3" cols="40" required></textarea>
   </label><br><br>
 
-  <!-- YOUR EXACT APPLIANCE LIST -->
+  <!-- Your Appliance List -->
   <p>Select Appliance(s) for Pickup:</p>
   <label><input type="checkbox" name="appliance" value="Refrigerator"> Refrigerator</label><br>
   <label><input type="checkbox" name="appliance" value="Freezer"> Freezer</label><br>
@@ -34,12 +37,17 @@
   <label><input type="radio" name="condition" value="Most appliances work"> Most appliances work</label><br>
   <label><input type="radio" name="condition" value="Some need repair"> Some need repair</label><br><br>
 
-  <!-- YOUR REQUIREMENT -->
+  <!-- Cleanliness Confirmation -->
   <label>
-    <input type="checkbox" name="clean_confirm" required>
+    <input type="checkbox" name="clean_confirmation" required>
     I confirm appliances are clean, free of mold, rotten food, chemicals, and hazardous materials
   </label><br><br>
 
+  <!-- Spam Protection -->
   <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Submit Button -->
   <button type="submit">Submit Pickup Request</button>
 </form>
+
+<h3>Photos</h3>
