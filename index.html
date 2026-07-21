@@ -1,10 +1,9 @@
-
 <section id="request">
 
 <h2>Request Free Appliance Pickup</h2>
 
 <p>
-Send us your information and appliance details. We will review your request and contact you to schedule pickup.
+Fill out the form below. We will review your appliance information and contact you to schedule pickup.
 </p>
 
 <form>
@@ -13,13 +12,19 @@ Send us your information and appliance details. We will review your request and 
 
 <input type="tel" placeholder="Phone Number" required>
 
-<input type="email" placeholder="Email Address">
+<input type="email" placeholder="Email Address (Optional)">
+
+<input type="text" placeholder="Street Address" required>
+
+<input type="text" placeholder="City" required>
+
+<input type="text" placeholder="State" required>
 
 <input type="text" placeholder="ZIP Code" required>
 
 
-<select>
-<option>Select Appliance</option>
+<select required>
+<option value="">Select Appliance</option>
 <option>Refrigerator</option>
 <option>Washer</option>
 <option>Dryer</option>
@@ -30,12 +35,25 @@ Send us your information and appliance details. We will review your request and 
 </select>
 
 
-<textarea placeholder="Tell us about your appliance (brand, condition, quantity, and location)"></textarea>
+<h3>Appliance Condition</h3>
+
+<p>Is the appliance fully working?</p>
+
+<select required>
+<option value="">Choose One</option>
+<option>Yes - Fully working</option>
+<option>No - Needs some repair</option>
+<option>No - Junk / Not working</option>
+</select>
 
 
-<button>
+<textarea placeholder="Tell us about your appliance (brand, model, quantity, age, and any details)"></textarea>
+
+
+<button type="submit">
 Submit Pickup Request
 </button>
+
 
 </form>
 
