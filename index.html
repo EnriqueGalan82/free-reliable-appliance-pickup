@@ -1,13 +1,23 @@
-<form action="https://formspree.io/f/mvzeapzd" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
 
-  <input type="tel" name="phone" placeholder="Phone Number" required>
+    <select name="appliance_condition" required>
+      <option value="">Select Appliance Condition</option>
+      <option>Fully Working</option>
+      <option>Needs Repair</option>
+      <option>Not Working / Junk</option>
+    </select>
 
-  <input type="email" name="email" placeholder="Email Address (Optional)">
+    <input type="text" name="pickup_address" placeholder="Pickup Address" required>
 
-  <input type="text" name="address" placeholder="Street Address" required>
+    <input type="text" name="city" placeholder="City" required>
 
-  <textarea name="appliance" placeholder="Describe the appliance(s)" required></textarea>
+    <input type="text" name="state" placeholder="State" required>
 
-  <button type="submit">Request Free Pickup</button>
-</form>
+    <textarea name="message" placeholder="Tell us about your appliance (brand, size, quantity, access to the home, etc.)" rows="5"></textarea>
+
+    <label for="photos">Upload Photos</label>
+    <input type="file" id="photos" name="photos" accept="image/*" multiple>
+
+    <button type="submit">Submit Pickup Request</button>
+
+  </form>
+</section>
