@@ -1,36 +1,83 @@
-# free-reliable-appliance-pickup
-Free Reliable appliance pickup in portland oregon and surrounding areas.shedulle a fas⁷t, reliable pickup online
-Reliable appliance pickup
-type="checkbox"> Refrigerator<br>
-<input type="checkbox"> Freezer<br>
-<input type="checkbox"> Washer<br>
-<input type="checkbox"> Dryer (Gas)<br>
-<input type="checkbox"> Dryer (Electric)<br>
-<input type="checkbox"> Stove/Range (Gas)<br>
-<input type="checkbox"> Stove/Range (Electric)<br>
-<input type="checkbox"> Dishwasher<br><br>
+<form action="https://formspree.io/f/mvzeapzd" method="POST">
 
+  <h3>Contact Information</h3>
 
-<h2>Condition</h2>
+  <label for="name">Full Name *</label>
+  <input type="text" id="name" name="name" placeholder="John Smith" required>
 
-<input type="radio" name="condition"> All appliances work<br>
-<input type="radio" name="condition"> Most appliances work<br>
-<input type="radio" name="condition"> Some need repair<br><br>
+  <label for="phone">Phone Number *</label>
+  <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
 
+  <label for="email">Email Address *</label>
+  <input type="email" id="email" name="email" placeholder="john@example.com" required>
 
-<h2>Photos</h2>
+  <hr>
 
-<input type="file" multiple><br><br>
+  <h3>Pickup Location</h3>
 
+  <label for="address">Street Address *</label>
+  <input type="text" id="address" name="address" placeholder="123 Main Street" required>
 
-<input type="checkbox">
-I confirm appliances are clean, free of mold, rotten food, chemicals, and hazardous materials.
+  <label for="city">City *</label>
+  <input type="text" id="city" name="city" placeholder="Your City" required>
 
-<br><br>
+  <label for="state">State</label>
+  <input type="text" id="state" name="state" placeholder="State">
 
-<button type="submit">Submit Pickup Request</button>
+  <label for="zip">ZIP Code *</label>
+  <input type="text" id="zip" name="zip" placeholder="12345" required>
+
+  <hr>
+
+  <h3>Appliance Information</h3>
+
+  <label for="appliance">Appliance Type *</label>
+  <select id="appliance" name="appliance" required>
+    <option value="">Select an appliance</option>
+    <option>Refrigerator</option>
+    <option>Freezer</option>
+    <option>Washer</option>
+    <option>Dryer</option>
+    <option>Dishwasher</option>
+    <option>Range / Oven</option>
+    <option>Microwave</option>
+    <option>Water Heater</option>
+    <option>Air Conditioner</option>
+    <option>Stove</option>
+    <option>Trash Compactor</option>
+    <option>Other</option>
+  </select>
+
+  <label for="condition">Condition</label>
+  <select id="condition" name="condition">
+    <option value="">Select Condition</option>
+    <option>Working</option>
+    <option>Not Working</option>
+    <option>Partially Working</option>
+    <option>Unknown</option>
+  </select>
+
+  <label for="quantity">Number of Appliances</label>
+  <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+  <hr>
+
+  <h3>Pickup Details</h3>
+
+  <label for="pickup-date">Preferred Pickup Date</label>
+  <input type="date" id="pickup-date" name="pickup_date">
+
+  <label for="pickup-time">Preferred Pickup Time</label>
+  <input type="time" id="pickup-time" name="pickup_time">
+
+  <label for="message">Additional Details</label>
+  <textarea
+    id="message"
+    name="message"
+    rows="6"
+    placeholder="Please include the appliance make and model (if known), condition, whether it is inside or outside, if stairs are involved, gate or access codes, whether someone will be available during pickup, and any additional information that will help our team prepare for your pickup."
+  ></textarea>
+
+  <button type="submit">Schedule My Free Pickup</button>
 
 </form>
-
-</body>
-</html>
