@@ -1,64 +1,39 @@
+<section id="pickup-request" class="pickup-section">
 
-<section id="pickup-request">
-  <h2>Schedule a Free Appliance Pickup</h2>
+  <h2>Schedule Your Free Appliance Pickup</h2>
+  <p>Complete the form below and we'll contact you to confirm your pickup.</p>
 
   <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
 
-    <label for="name">Full Name</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Enter your full name"
-      required
-    >
+    <h3>Contact Information</h3>
 
-    <label for="phone">Phone Number</label>
-    <input
-      type="tel"
-      id="phone"
-      name="phone"
-      placeholder="Enter your phone number"
-      required
-    >
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" placeholder="John Smith" required>
+
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
 
     <label for="email">Email Address</label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Enter your email address"
-      required
-    >
+    <input type="email" id="email" name="email" placeholder="john@example.com">
 
-    <label for="address">Pickup Address</label>
-    <input
-      type="text"
-      id="address"
-      name="address"
-      placeholder="Enter the pickup address"
-      required
-    >
+    <hr>
 
-    <label for="city">City</label>
-    <input
-      type="text"
-      id="city"
-      name="city"
-      placeholder="Enter your city"
-      required
-    >
+    <h3>Pickup Location</h3>
 
-    <label for="zip">ZIP Code</label>
-    <input
-      type="text"
-      id="zip"
-      name="zip"
-      placeholder="Enter your ZIP code"
-      required
-    >
+    <label for="address">Street Address *</label>
+    <input type="text" id="address" name="address" placeholder="123 Main Street" required>
 
-    <label for="appliance">Appliance Type</label>
+    <label for="city">City *</label>
+    <input type="text" id="city" name="city" placeholder="Your City" required>
+
+    <label for="zip">ZIP Code *</label>
+    <input type="text" id="zip" name="zip" placeholder="12345" required>
+
+    <hr>
+
+    <h3>Appliance Information</h3>
+
+    <label for="appliance">Appliance Type *</label>
     <select id="appliance" name="appliance" required>
       <option value="">Select an appliance</option>
       <option>Refrigerator</option>
@@ -66,36 +41,44 @@
       <option>Washer</option>
       <option>Dryer</option>
       <option>Dishwasher</option>
-      <option>Oven / Range</option>
+      <option>Range / Oven</option>
       <option>Microwave</option>
       <option>Water Heater</option>
       <option>Air Conditioner</option>
       <option>Other</option>
     </select>
 
+    <label for="condition">Condition</label>
+    <select id="condition" name="condition">
+      <option value="">Select condition</option>
+      <option>Working</option>
+      <option>Not Working</option>
+      <option>Unknown</option>
+    </select>
+
+    <label for="quantity">Number of Appliances</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+    <hr>
+
+    <h3>Pickup Details</h3>
+
     <label for="pickup-date">Preferred Pickup Date</label>
-    <input
-      type="date"
-      id="pickup-date"
-      name="pickup_date"
-    >
+    <input type="date" id="pickup-date" name="pickup_date">
 
-    <label for="pickup-time">Preferred Pickup Time</label>
-    <input
-      type="time"
-      id="pickup-time"
-      name="pickup_time"
-    >
+    <label for="pickup-time">Preferred Time</label>
+    <input type="time" id="pickup-time" name="pickup_time">
 
-    <label for="message">Additional Information</label>
+    <label for="message">Additional Details</label>
     <textarea
       id="message"
       name="message"
-      rows="5"
-      placeholder="Please include the appliance make and model (if known), condition, whether it is inside or outside, if stairs are involved, gate or access codes, preferred pickup date and time, and any other details that will help us complete your pickup safely and efficiently."
+      rows="6"
+      placeholder="Tell us the appliance make and model (if known), whether it is inside or outside, if there are stairs, gate codes, special access instructions, or anything else our pickup team should know."
     ></textarea>
 
-    <button type="submit">Submit Pickup Request</button>
+    <button type="submit">Schedule My Free Pickup</button>
 
   </form>
+
 </section>
