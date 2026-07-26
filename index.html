@@ -1,65 +1,23 @@
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-<h2>Pickup Information</h2>
+name="appliance[]" value="Refrigerator"> Refrigerator</label><br>
+  <label><input type="checkbox" name="appliance[]" value="Freezer"> Freezer</label><br>
+  <label><input type="checkbox" name="appliance[]" value="Washer"> Washer</label><br>
+  <label><input type="checkbox" name="appliance[]" value="Dryer"> Dryer</label><br>
+  <label><input type="checkbox" name="appliance[]" value="Stove/Range"> Stove/Range</label><br>
+  <label><input type="checkbox" name="appliance[]" value="Dishwasher"> Dishwasher</label><br>
 
-<label>Name</label>
-<input type="text" name="name" placeholder="Your Name" required>
+  <h2>Condition</h2>
 
-<label>Address</label>
-<input type="text" name="address" placeholder="Pickup Address" required>
+  <label><input type="radio" name="condition" value="Fully Working" required> Fully Working</label><br>
+  <label><input type="radio" name="condition" value="Mostly Working"> Mostly Working</label><br>
+  <label><input type="radio" name="condition" value="Needs Repair"> Needs Repair</label><br>
 
-<label>City</label>
-<input type="text" name="city" placeholder="City" required>
+  <h2>Additional Information</h2>
 
-<label>State</label>
-<input type="text" name="state" placeholder="State" required>
+  <textarea name="message" rows="5" placeholder="Tell us about the appliance(s) or anything we should know."></textarea>
 
-<label>Phone</label>
-<input type="tel" name="phone" placeholder="Phone Number" required>
+  <br><br>
 
-
-<h2>Type of Appliances</h2>
-
-<label><input type="checkbox" name="appliance" value="Refrigerator"> Refrigerator</label><br>
-
-<label><input type="checkbox" name="appliance" value="Freezer"> Freezer</label><br>
-
-<label><input type="checkbox" name="appliance" value="Washer"> Washer</label><br>
-
-<label><input type="checkbox" name="appliance" value="Dryer"> Dryer</label><br>
-
-<label><input type="checkbox" name="appliance" value="Stove"> Stove/Range</label><br>
-
-<label><input type="checkbox" name="appliance" value="Dishwasher"> Dishwasher</label><br>
-
-
-<h2>Condition</h2>
-
-<label>
-<input type="radio" name="condition" value="Fully working" required>
-Fully working
-</label>
-
-<br>
-
-<label>
-<input type="radio" name="condition" value="Mostly working">
-Mostly working
-</label>
-
-<br>
-
-<label>
-<input type="radio" name="condition" value="Needs repair">
-Needs repair
-</label>
-
-
-<h2>Notes</h2>
-
-<textarea name="notes" placeholder="Additional information about the appliances or pickup location" rows="5"></textarea>
-
-
-<button type="submit">Request Free Pickup</button>
+  <button type="submit">Request Free Pickup</button>
 
 </form>
