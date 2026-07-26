@@ -1,8 +1,162 @@
-    <input type="text" name="state" placeholder="State" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-    <textarea name="message" placeholder="Additional Information (Optional)" rows="5"></textarea>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <button type="submit">Request Free Pickup</button>
+<title>Reliable Appliance Pickup | Free Appliance Pickup Across USA</title>
 
-  </form>
-</section>
+<meta name="description" content="Free appliance pickup service for refrigerators, washers, dryers, stoves, freezers and dishwashers. Fast and reliable appliance pickup across the USA.">
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#0b5ed7;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+section{
+background:white;
+max-width:700px;
+margin:20px auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+h2{
+color:#0b5ed7;
+}
+
+input, textarea, select{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+box-sizing:border-box;
+}
+
+.checkbox-group label{
+display:block;
+margin:8px 0;
+}
+
+button{
+background:#0b5ed7;
+color:white;
+border:none;
+padding:15px;
+width:100%;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#084298;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Reliable Appliance Pickup</h1>
+
+<p>Free Appliance Pickup Service Across the USA</p>
+
+<p>Fast, reliable and convenient pickup for unwanted appliances.</p>
+
+</header>
+
+
+<section>
+
+<h2>Request Free Appliance Pickup</h2>
+
+<p>
+Send us your information and we will contact you to schedule a pickup.
+Please include photos of the appliances if possible.
+</p>
+
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<input type="email" name="email" placeholder="Email (Optional)">
+
+<input type="text" name="address" placeholder="Pickup Address" required>
+
+<input type="text" name="city" placeholder="City" required>
+
+<input type="text" name="state" placeholder="State" required>
+
+<input type="text" name="zip" placeholder="ZIP Code" required>
+
+
+<h2>Appliance Type</h2>
+
+<div class="checkbox-group">
+
+<label><input type="checkbox" name="appliance" value="Refrigerator"> Refrigerator</label>
+
+<label><input type="checkbox" name="appliance" value="Freezer"> Freezer</label>
+
+<label><input type="checkbox" name="appliance" value="Washer"> Washing Machine</label>
+
+<label><input type="checkbox" name="appliance" value="Dryer Gas"> Dryer (Gas)</label>
+
+<label><input type="checkbox" name="appliance" value="Dryer Electric"> Dryer (Electric)</label>
+
+<label><input type="checkbox" name="appliance" value="Stove Gas"> Stove/Range (Gas)</label>
+
+<label><input type="checkbox" name="appliance" value="Stove Electric"> Stove/Range (Electric)</label>
+
+<label><input type="checkbox" name="appliance" value="Dishwasher"> Dishwasher</label>
+
+</div>
+
+
+<h2>Appliance Condition</h2>
+
+<label>
+<input type="radio" name="condition" value="All working">
+All appliances are working
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="condition" value="Most working">
+Most appliances are working
+</label>
+
+<br>
+
+<label>
+<input type="radio"
