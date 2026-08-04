@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,11 +9,17 @@
 
 <meta name="google-site-verification" content="Anrt85-edkgfFKhvsOTGvEZY1mPU5CyqTn7np90wFpo">
 
-<meta name="description" content="Free appliance pickup, appliance removal, and appliance haul away service for refrigerators, washers, dryers, and household appliances in Oregon and California.">
+<meta name="description" content="Free appliance pickup, appliance removal, and appliance haul away service for refrigerators, washers, dryers, stoves, freezers and household appliances in Oregon and California.">
+
+<meta name="keywords" content="free appliance pickup, appliance removal, appliance haul away, refrigerator pickup, washer pickup, dryer removal, Oregon appliance pickup, California appliance pickup">
 
 <title>Free Appliance Pickup & Removal | Reliable Appliance Pickup Service</title>
 
 <style>
+
+*{
+box-sizing:border-box;
+}
 
 body{
 font-family:Arial,Helvetica,sans-serif;
@@ -24,25 +30,26 @@ line-height:1.6;
 }
 
 header{
-background:#0056b3;
+background:linear-gradient(135deg,#0056b3,#003d80);
 color:white;
 text-align:center;
-padding:70px 20px;
+padding:80px 20px;
 }
 
 header h1{
 font-size:42px;
-margin-bottom:10px;
+margin:0 0 15px;
 }
 
 header p{
 font-size:20px;
+margin:8px;
 }
 
 .button{
 display:inline-block;
 margin-top:20px;
-padding:14px 25px;
+padding:15px 28px;
 background:#28a745;
 color:white;
 text-decoration:none;
@@ -50,31 +57,37 @@ border-radius:8px;
 font-weight:bold;
 }
 
+.button:hover{
+opacity:.85;
+}
+
 .city-button{
 display:inline-block;
-padding:12px 20px;
+padding:12px 22px;
 background:#1a73e8;
 color:white;
 text-decoration:none;
-border-radius:6px;
+border-radius:7px;
 font-weight:bold;
-margin:10px;
+margin:8px;
 }
 
 .city-button:hover{
-opacity:0.85;
+opacity:.85;
 }
 
 nav{
 background:#003d80;
 padding:15px;
 text-align:center;
+position:sticky;
+top:0;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:0 10px;
+margin:0 12px;
 font-weight:bold;
 }
 
@@ -87,7 +100,8 @@ padding:45px 20px;
 h2{
 text-align:center;
 color:#0056b3;
-margin-bottom:25px;
+font-size:32px;
+margin-bottom:30px;
 }
 
 .cards{
@@ -99,32 +113,64 @@ gap:20px;
 .card{
 background:white;
 padding:25px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,.12);
+border-radius:12px;
+box-shadow:0 3px 12px rgba(0,0,0,.12);
+}
+
+.card h3{
+color:#0056b3;
 }
 
 input,select,textarea,button{
+
 width:100%;
-padding:12px;
+padding:14px;
 margin-top:10px;
 margin-bottom:15px;
 border:1px solid #ccc;
-border-radius:6px;
+border-radius:7px;
 font-size:16px;
+
 }
 
 button{
 background:#28a745;
 color:white;
 border:none;
+font-weight:bold;
 cursor:pointer;
+}
+
+button:hover{
+opacity:.85;
 }
 
 footer{
 background:#003d80;
 color:white;
 text-align:center;
-padding:30px;
+padding:35px 20px;
+}
+
+footer a{
+color:white;
+}
+
+@media(max-width:600px){
+
+header h1{
+font-size:30px;
+}
+
+header p{
+font-size:18px;
+}
+
+nav a{
+display:inline-block;
+margin:6px;
+}
+
 }
 
 </style>
@@ -139,12 +185,12 @@ padding:30px;
 
 <h1>FREE RELIABLE APPLIANCE PICKUP</h1>
 
-<p>Professional Appliance Pickup Made Simple</p>
+<p>Professional Appliance Removal & Haul Away Service</p>
 
 <p>Fast • Free • Reliable</p>
 
 <a href="#pickup" class="button">
-Schedule a Free Pickup
+Schedule Your Free Pickup
 </a>
 
 </header>
@@ -155,23 +201,22 @@ Schedule a Free Pickup
 <a href="#about">About</a>
 <a href="#areas">Areas</a>
 <a href="#services">Services</a>
-<a href="#contact">Contact</a>
 <a href="#pickup">Pickup</a>
+<a href="#contact">Contact</a>
 
 </nav>
-
-
-<section id="about">
+  <section id="about">
 
 <h2>About Us</h2>
 
-<p style="text-align:center;max-width:800px;margin:auto;">
+<p style="text-align:center;max-width:850px;margin:auto;">
 
-We provide professional appliance pickup and removal services for homeowners, landlords, property managers, contractors, and businesses. Our goal is to make appliance removal simple, reliable, and hassle-free.
+Free Reliable Appliance Pickup provides professional appliance removal and haul away services for homeowners, landlords, property managers, contractors, and businesses. We make removing unwanted appliances simple, convenient, and stress-free.
 
 </p>
 
 </section>
+
 
 
 <section id="areas">
@@ -180,17 +225,12 @@ We provide professional appliance pickup and removal services for homeowners, la
 
 <div style="text-align:center;">
 
-<a href="#contact" class="city-button">Portland Oregon</a>
-
-<a href="#contact" class="city-button">Salem Oregon</a>
-
-<a href="#contact" class="city-button">Orange County California</a>
-
-<a href="#contact" class="city-button">Los Angeles County</a>
-
-<a href="#contact" class="city-button">Riverside County</a>
-
-<a href="#contact" class="city-button">San Bernardino County</a>
+<a href="#pickup" class="city-button">Portland Oregon</a>
+<a href="#pickup" class="city-button">Salem Oregon</a>
+<a href="#pickup" class="city-button">Orange County California</a>
+<a href="#pickup" class="city-button">Los Angeles County</a>
+<a href="#pickup" class="city-button">Riverside County</a>
+<a href="#pickup" class="city-button">San Bernardino County</a>
 
 </div>
 
@@ -200,82 +240,95 @@ We provide professional appliance pickup and removal services for homeowners, la
 
 <div class="card">
 <h3>Portland, Oregon</h3>
-<p>Free appliance pickup and removal service for refrigerators, washers, dryers, and more.</p>
+<p>Free refrigerator pickup, washer pickup, dryer removal and appliance haul away services.</p>
 </div>
 
 
 <div class="card">
 <h3>Salem, Oregon</h3>
-<p>Serving Salem with appliance pickup, removal, and haul away services.</p>
+<p>Reliable appliance removal services for homes, apartments and businesses.</p>
 </div>
 
 
 <div class="card">
 <h3>Orange County, California</h3>
-<p>Helping residents remove unwanted appliances quickly and easily.</p>
+<p>Serving homeowners and property managers with convenient appliance pickup.</p>
 </div>
 
 
 <div class="card">
-<h3>Los Angeles County, California</h3>
-<p>Appliance pickup and removal services available throughout the county.</p>
+<h3>Los Angeles County</h3>
+<p>Professional appliance removal and haul away service throughout the area.</p>
 </div>
 
 
 <div class="card">
-<h3>Riverside County, California</h3>
-<p>Providing appliance pickup and recycling services.</p>
+<h3>Riverside County</h3>
+<p>Helping residents remove unwanted refrigerators, washers and dryers.</p>
 </div>
 
 
 <div class="card">
-<h3>San Bernardino County, California</h3>
-<p>Reliable appliance removal and haul away service.</p>
+<h3>San Bernardino County</h3>
+<p>Fast and dependable appliance pickup service available.</p>
 </div>
 
 
 </div>
 
 </section>
+
+
+
+
 <section id="services">
 
 <h2>Appliances We Pick Up</h2>
 
+
 <div class="cards">
+
 
 <div class="card">
 <h3>🧊 Refrigerators & Freezers</h3>
-<p>Working and non-working units.</p>
+<p>Side-by-side, French door, top freezer, bottom freezer and more.</p>
 </div>
+
 
 <div class="card">
 <h3>🧺 Washers & Dryers</h3>
-<p>Top load, front load, gas, and electric.</p>
+<p>Top load, front load, electric and gas dryers.</p>
 </div>
+
 
 <div class="card">
 <h3>🍳 Kitchen Appliances</h3>
-<p>Ranges, ovens, dishwashers, microwaves, and more.</p>
+<p>Ranges, ovens, dishwashers, microwaves and other appliances.</p>
 </div>
 
+
 <div class="card">
-<h3>❄️ Heating & Cooling</h3>
-<p>Window AC units and other qualifying appliances.</p>
+<h3>❄ Air Conditioners</h3>
+<p>Window AC units and qualifying cooling appliances.</p>
 </div>
+
 
 <div class="card">
 <h3>🏠 Residential & Commercial</h3>
-<p>Homes, apartments, offices, and businesses.</p>
+<p>Homes, apartments, rentals, offices and businesses.</p>
 </div>
+
 
 <div class="card">
 <h3>🚚 Multiple Appliance Pickup</h3>
-<p>Need several appliances removed? We can help.</p>
+<p>Have several appliances? Contact us for pickup options.</p>
 </div>
+
 
 </div>
 
 </section>
+
 
 
 
@@ -283,74 +336,70 @@ We provide professional appliance pickup and removal services for homeowners, la
 
 <h2>Why Choose Us?</h2>
 
+
 <div class="cards">
+
 
 <div class="card">
 <h3>✔ Free Pickup</h3>
-<p>No pickup fee for qualifying appliances.</p>
+<p>No pickup charge for qualifying appliances.</p>
 </div>
+
 
 <div class="card">
 <h3>✔ Fast Scheduling</h3>
-<p>We contact you quickly to arrange your pickup.</p>
+<p>We respond quickly to arrange your pickup time.</p>
 </div>
+
 
 <div class="card">
 <h3>✔ Reliable Service</h3>
-<p>Professional appliance pickup made simple.</p>
+<p>Professional, friendly and dependable appliance removal.</p>
 </div>
+
 
 </div>
 
 </section>
-
-
-
-<section id="contact">
+  <section id="contact">
 
 <h2>Contact Us</h2>
-
 
 <p style="text-align:center;font-size:20px;">
 
 
-<strong>Portland & Salem Oregon:</strong><br>
+<strong>Portland & Salem Oregon</strong><br>
 <a href="tel:+15038684455">(503) 868-4455</a>
 
 
 <br><br>
 
 
-<strong>Orange County, Riverside County & San Bernardino County California:</strong><br>
+<strong>Orange County, Riverside County & San Bernardino County California</strong><br>
 <a href="tel:+19093756685">(909) 375-6685</a>
 
 
 <br><br>
 
 
-<strong>Los Angeles County California:</strong><br>
+<strong>Los Angeles County California</strong><br>
 <a href="tel:+13107744304">(310) 774-4304</a>
 
 
 </p>
 
 
-
 <p style="text-align:center;">
-
 
 <a class="button" href="tel:+15038684455">
 📞 Call Now
 </a>
 
-
 &nbsp;
-
 
 <a class="button" href="sms:+15038684455">
 💬 Text Us
 </a>
-
 
 </p>
 
@@ -362,8 +411,7 @@ We provide professional appliance pickup and removal services for homeowners, la
 
 <section id="pickup">
 
-
-<h2>Request a Free Pickup</h2>
+<h2>Request Your Free Appliance Pickup</h2>
 
 
 <form action="https://formspree.io/f/mvzeapzd" method="POST">
@@ -373,36 +421,36 @@ We provide professional appliance pickup and removal services for homeowners, la
 
 
 <input 
-type="text" 
-name="name" 
-placeholder="Full Name" 
+type="text"
+name="name"
+placeholder="Full Name"
 required>
 
 
-<input 
-type="tel" 
-name="phone" 
-placeholder="Phone Number" 
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number"
 required>
 
 
-<input 
-type="email" 
-name="email" 
+<input
+type="email"
+name="email"
 placeholder="Email Address">
 
 
-<input 
-type="text" 
-name="address" 
-placeholder="Pickup Address" 
+<input
+type="text"
+name="address"
+placeholder="Pickup Address"
 required>
 
 
-<input 
-type="text" 
-name="city" 
-placeholder="City" 
+<input
+type="text"
+name="city"
+placeholder="City"
 required>
 
 
@@ -415,24 +463,24 @@ required>
 </select>
 
 
-
-<input 
-type="text" 
-name="zip" 
-placeholder="ZIP Code" 
+<input
+type="text"
+name="zip"
+placeholder="ZIP Code"
 required>
 
 
 
 <select name="appliance" required>
 
-<option value="">Select Appliance</option>
+<option value="">Type of Appliance</option>
 <option>Refrigerator</option>
 <option>Freezer</option>
 <option>Washer</option>
 <option>Dryer</option>
 <option>Dishwasher</option>
-<option>Range / Oven</option>
+<option>Stove / Range</option>
+<option>Oven</option>
 <option>Microwave</option>
 <option>Air Conditioner</option>
 <option>Other</option>
@@ -453,10 +501,10 @@ required>
 
 
 
-<textarea 
-name="message" 
+<textarea
+name="message"
 rows="6"
-placeholder="Tell us about the appliance location, stairs, and pickup details.">
+placeholder="Tell us about stairs, location, appliance details, and pickup information.">
 </textarea>
 
 
@@ -470,6 +518,10 @@ Schedule My Free Pickup
 
 
 </section>
+
+
+
+
 <footer>
 
 <h3>Free Reliable Appliance Pickup</h3>
@@ -478,12 +530,12 @@ Schedule My Free Pickup
 
 <p>Fast • Free • Reliable</p>
 
-<p>&copy; 2026 Free Reliable Appliance Pickup. All Rights Reserved.</p>
+<p>© 2026 Free Reliable Appliance Pickup. All Rights Reserved.</p>
 
 
 <p>
 <a href="YOUR-FACEBOOK-PAGE-LINK" target="_blank">
-Visit our Facebook Page
+Visit Our Facebook Page
 </a>
 </p>
 
@@ -499,11 +551,11 @@ Visit our Facebook Page
 "@context":"https://schema.org",
 "@type":"LocalBusiness",
 "name":"Free Reliable Appliance Pickup",
-"description":"Free appliance pickup, appliance removal, appliance haul away and appliance recycling service for refrigerators, washers, dryers, stoves and other household appliances.",
+"description":"Free appliance pickup, appliance removal, appliance haul away and recycling service for refrigerators, washers, dryers and household appliances.",
 "serviceType":[
+"Free Appliance Pickup",
 "Appliance Removal",
 "Appliance Haul Away",
-"Free Appliance Pickup",
 "Appliance Recycling"
 ],
 "areaServed":[
