@@ -1,25 +1,8 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-<style>
-.city-button {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #1a73e8;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  margin: 10px 0;
-}
 
-.city-button:hover {
-  opacity: 0.85;
-}
-</style>
- 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -29,7 +12,7 @@
 
 <title>Free Reliable Appliance Pickup</title>
 
-
+<style>
 
 body{
 font-family:Arial,Helvetica,sans-serif;
@@ -64,6 +47,21 @@ color:white;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
+}
+
+.city-button {
+display:inline-block;
+padding:12px 20px;
+background:#1a73e8;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+margin:10px;
+}
+
+.city-button:hover{
+opacity:0.85;
 }
 
 nav{
@@ -132,7 +130,9 @@ padding:30px;
 
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -177,6 +177,23 @@ We provide professional appliance pickup and removal services for homeowners, la
 
 <h2>Service Areas</h2>
 
+<div style="text-align:center;">
+
+<a href="#" class="city-button">Portland Oregon</a>
+
+<a href="#" class="city-button">Salem Oregon</a>
+
+<a href="#" class="city-button">Orange County California</a>
+
+<a href="#" class="city-button">Los Angeles County</a>
+
+<a href="#" class="city-button">Riverside County</a>
+
+<a href="#" class="city-button">San Bernardino County</a>
+
+</div>
+
+
 <div class="cards">
 
 <div class="card">
@@ -212,7 +229,9 @@ We provide professional appliance pickup and removal services for homeowners, la
 </div>
 
 </section>
- <section id="services">
+
+
+<section id="services">
 
 <h2>Appliances We Pick Up</h2>
 
@@ -238,22 +257,10 @@ We provide professional appliance pickup and removal services for homeowners, la
 <p>Window AC units and other qualifying appliances.</p>
 </div>
 
-<div class="card">
-<h3>🏠 Residential & Commercial</h3>
-<p>Homes, apartments, offices, and businesses.</p>
-</div>
-
-<div class="card">
-<h3>🚚 Multiple Appliance Pickups</h3>
-<p>Need several appliances removed? We can help.</p>
-</div>
-
 </div>
 
 </section>
-
-
-<section id="why">
+ <section id="why">
 
 <h2>Why Choose Us?</h2>
 
@@ -315,54 +322,49 @@ We provide professional appliance pickup and removal services for homeowners, la
 
 </p>
 
-
-<p style="text-align:center;margin-top:25px;">
-
-Serving homeowners, landlords, property managers, businesses, and contractors with professional appliance pickup.
-
-</p>
-
 </section>
+
 
 
 <section id="pickup">
 
 <h2>Request a Free Pickup</h2>
 
+
 <form action="https://formspree.io/f/mvzeapzd" method="POST">
 
 
-<input
-type="text"
-name="name"
-placeholder="Full Name"
+<input 
+type="text" 
+name="name" 
+placeholder="Full Name" 
 required>
 
 
-<input
-type="tel"
-name="phone"
-placeholder="Phone Number"
+<input 
+type="tel" 
+name="phone" 
+placeholder="Phone Number" 
 required>
 
 
-<input
-type="email"
-name="email"
+<input 
+type="email" 
+name="email" 
 placeholder="Email Address">
 
 
-<input
-type="text"
-name="address"
-placeholder="Pickup Address"
+<input 
+type="text" 
+name="address" 
+placeholder="Pickup Address" 
 required>
 
 
-<input
-type="text"
-name="city"
-placeholder="City"
+<input 
+type="text" 
+name="city" 
+placeholder="City" 
 required>
 
 
@@ -375,11 +377,12 @@ required>
 </select>
 
 
-<input
-type="text"
-name="zip"
-placeholder="ZIP Code"
+<input 
+type="text" 
+name="zip" 
+placeholder="ZIP Code" 
 required>
+
 
 
 <select name="appliance" required>
@@ -392,11 +395,11 @@ required>
 <option>Dishwasher</option>
 <option>Range / Oven</option>
 <option>Microwave</option>
-<option>Water Heater</option>
 <option>Air Conditioner</option>
 <option>Other</option>
 
 </select>
+
 
 
 <select name="condition" required>
@@ -404,16 +407,19 @@ required>
 <option value="">Appliance Condition</option>
 <option>Fully Working</option>
 <option>Not Working</option>
-<option>Needs Some Repair</option>
+<option>Needs Repair</option>
 <option>Unknown</option>
 
 </select>
 
 
-<textarea
-name="message"
+
+<textarea 
+name="message" 
 rows="6"
-placeholder="Please tell us where the appliance is located, if there are stairs, and any other pickup details."></textarea>
+placeholder="Tell us about the appliance location, stairs, and pickup details.">
+</textarea>
+
 
 
 <button type="submit">
@@ -424,7 +430,9 @@ Schedule My Free Pickup
 </form>
 
 </section>
- 
+
+
+
 <footer>
 
 <h3>Free Reliable Appliance Pickup</h3>
@@ -434,41 +442,47 @@ Schedule My Free Pickup
 <p>Fast • Free • Reliable</p>
 
 <p>&copy; 2026 Free Reliable Appliance Pickup. All Rights Reserved.</p>
+
+
 <p>
 <a href="YOUR-FACEBOOK-PAGE-LINK" target="_blank">
 Visit our Facebook Page
 </a>
 </p>
+
+
 </footer>
+
 
 
 <script type="application/ld+json">
 
 {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Free Reliable Appliance Pickup",
-  "description": "Free appliance pickup, appliance removal, appliance haul away, and appliance recycling service for refrigerators, washers, dryers, stoves, and other household appliances.",
-  "serviceType": [
-    "Appliance Removal",
-    "Appliance Haul Away",
-    "Free Appliance Pickup",
-    "Appliance Recycling"
-  ],
-  "areaServed": [
-    "Portland Oregon",
-    "Salem Oregon",
-    "Orange County California",
-    "Los Angeles County California",
-    "Riverside County California",
-    "San Bernardino County California"
-  ],
-  "telephone": "+15038684455"
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"Free Reliable Appliance Pickup",
+"description":"Free appliance pickup, appliance removal, appliance haul away and recycling service.",
+"serviceType":[
+"Appliance Removal",
+"Appliance Haul Away",
+"Free Appliance Pickup",
+"Appliance Recycling"
+],
+"areaServed":[
+"Portland Oregon",
+"Salem Oregon",
+"Orange County California",
+"Los Angeles County California",
+"Riverside County California",
+"San Bernardino County California"
+],
+"telephone":"+15038684455"
 }
 
 </script>
 
+
 </body>
- 
+
 </html>
 
